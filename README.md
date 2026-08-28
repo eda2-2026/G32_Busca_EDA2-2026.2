@@ -1,8 +1,4 @@
-# G32_Busca_EDA2-2026.2
-
 # Sistema de Localização de Veículos em Estacionamento
-
-> Trabalho da disciplina de Estrutura de Dados 2 — Algoritmos de Busca.
 
 ## Integrantes
 
