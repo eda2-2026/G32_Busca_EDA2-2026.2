@@ -6,11 +6,12 @@
 
 ## Integrantes
 
-| Matrícula | Nome |
-|---|---|---|
-| 231027005|Maria Samara | 
-| 2310391400| Marjorie Mitzi|
+| Matrícula  | Nome          |
+|------------|---------------|
+| 231027005  | Maria Samara  |
+| 2310391400 | Marjorie Mitzi |
 
+## Vídeo: 
 ## Motivação
 
 <!-- TODO: explicar o problema real que o sistema resolve -->
@@ -32,7 +33,3 @@
 ## Resultados do benchmark
 
 <!-- TODO: colar aqui a tabela/gráfico comparando as estruturas, com uma breve conclusão -->
-
-## Vídeo de apresentação
-
-<!-- TODO: link do vídeo de 5 minutos -->
