@@ -1,6 +1,5 @@
 from veiculo import Veiculo
 
-
 class BuscaSequencial:
 
     def __init__(self):
