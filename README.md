@@ -45,13 +45,16 @@ Isso comprova a seguinte teoria de complexidade:
 ##  Como Rodar
 Certifique-se de possuir o Python 3 instalado no seu ambiente. Acesse a raiz do repositório via terminal e execute:
 
-```bash
 python3 main.py
 
 
 ##  Demonstração do Sistema
 
-!(assets/Screenshot from 2026-08-31 18-19-29.png)
-!(assets/Screenshot from 2026-08-31 18-19-40.png)
-!(assets/Screenshot from 2026-08-31 18-19-49.png)
-!(assets/Screenshot from 2026-08-31 18-19-55.png)
+<img width="1920" height="1080" alt="Screenshot from 2026-08-31 18-19-40" src="https://github.com/user-attachments/assets/dc2c9d39-409d-4fe0-9eb4-837b4781901a" />
+<img width="1920" height="1080" alt="Screenshot from 2026-08-31 18-19-29" src="https://github.com/user-attachments/assets/250eb5d3-8407-4235-9de0-087004ec85c0" />
+<img width="1920" height="1080" alt="Screenshot from 2026-08-31 18-19-49" src="https://github.com/user-attachments/assets/1a3d418d-5851-4f16-bc56-79f37a4b8820" />
+<img width="1920" height="1080" alt="Screenshot from 2026-08-31 18-19-55" src="https://github.com/user-attachments/assets/da7b4ef6-121c-4b30-8f9a-b7838ba5632d" />
+
+
+```bash
+
