@@ -8,6 +8,8 @@ def exibir_menu():
     print("2. Buscar veículo por placa (com Benchmark)")
     print("3. Registrar saída de veículo")
     print("4. Listar veículos estacionados (Em Ordem)")
+    print("5. Visualizar Estrutura da Árvore (Gráfico)")
+    print("6. Ver Histórico de Entradas e Saídas")
     print("0. Sair do sistema")
     print("="*40)
 
@@ -63,6 +65,18 @@ def main():
                 print("\nVEÍCULOS ESTACIONADOS (Ordenados por Placa):")
                 for v in veiculos:
                     print(f"Vaga: {v.vaga:03d} | Placa: {v.placa} | Modelo: {v.modelo}")
+
+        elif opcao == '5':
+            patio.abb.exibir_arvore_grafica()
+
+        elif opcao == '6':
+            logs = patio.obter_historico()
+            if not logs:
+                print("Nenhuma movimentação registrada.")
+            else:
+                print("\n--- HISTÓRICO DO ESTACIONAMENTO ---")
+                for registro in logs:
+                    print(registro)
 
         elif opcao == '0':
             print("Encerrando o sistema...")

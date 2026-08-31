@@ -8,6 +8,7 @@ class Estacionamento:
         self.total_vagas = total_vagas
         self.abb = ArvoreBinariaBusca()
         self.sequencial = BuscaSequencial()
+        self.historico = []
 
     def vagas_disponiveis(self) -> int:
         return self.total_vagas - len(self.abb)
@@ -15,11 +16,10 @@ class Estacionamento:
     def inserir_veiculo(self, placa: str, vaga: int, modelo: str) -> Tuple[bool, str]:
         if self.vagas_disponiveis() <= 0:
             return False, "Erro: Estacionamento lotado."
-
         veiculo = Veiculo(placa, vaga, modelo)
-        
         if self.abb.inserir(veiculo):
             self.sequencial.inserir(veiculo)
+            self.historico.append(f"[ENTRADA] Placa: {placa} | Vaga: {vaga}")
             return True, f"Sucesso: Veículo {veiculo.placa} estacionado na vaga {veiculo.vaga}."
         else:
             return False, f"Erro: A placa {veiculo.placa} já está cadastrada."
@@ -32,8 +32,12 @@ class Estacionamento:
     def remover_veiculo(self, placa: str) -> Tuple[bool, str]:
         if self.abb.remover(placa):
             self.sequencial.remover(placa)
+            self.historico.append(f"[SAÍDA] Placa: {placa} | Vaga liberada")
             return True, "Sucesso: Veículo removido e vaga liberada."
         return False, "Erro: Veículo não encontrado."
 
     def listar_veiculos(self) -> List[Veiculo]:
         return self.abb.em_ordem()
+
+    def obter_historico(self) -> List[str]:
+        return self.historico
