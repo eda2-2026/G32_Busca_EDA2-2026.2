@@ -45,7 +45,7 @@ def main():
             if veiculo:
                 print(f"\nVeículo Encontrado: {veiculo.modelo} | Vaga: {veiculo.vaga}")
                 print("-" * 30)
-                print("📊 RESULTADOS DO BENCHMARK")
+                print(" RESULTADOS DO BENCHMARK")
                 print(f"Busca ABB (O(log n)): {comp_abb} comparações")
                 print(f"Busca Sequencial (O(n)): {comp_seq} comparações")
                 print("-" * 30)
