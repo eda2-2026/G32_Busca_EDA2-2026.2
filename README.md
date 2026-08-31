@@ -7,7 +7,7 @@
 | 2310391400 | Marjorie Mitzi |
 
 ##  Vídeo da Apresentação
-*(Insira aqui o link do vídeo no YouTube ou Drive)*
+*https://youtu.be/ZjNHZNRCZZs*
 
 ---
 
@@ -47,3 +47,11 @@ Certifique-se de possuir o Python 3 instalado no seu ambiente. Acesse a raiz do 
 
 ```bash
 python3 main.py
+
+
+##  Demonstração do Sistema
+
+!(assets/Screenshot from 2026-08-31 18-19-29.png)
+!(assets/Screenshot from 2026-08-31 18-19-40.png)
+!(assets/Screenshot from 2026-08-31 18-19-49.png)
+!(assets/Screenshot from 2026-08-31 18-19-55.png)
