@@ -1,4 +1,3 @@
-<img width="1920" height="1080" alt="Screenshot from 2026-08-31 18-19-29" src="https://github.com/user-attachments/assets/2edf06ed-64e4-4d0d-8b4b-7de33ecf1242" />
 # Sistema de Localização de Veículos em Estacionamento
 
 ## Integrantes
@@ -46,7 +45,6 @@ Isso comprova a seguinte teoria de complexidade:
 ##  Como Rodar
 Certifique-se de possuir o Python 3 instalado no seu ambiente. Acesse a raiz do repositório via terminal e execute:
 
-```bash
 python3 main.py
 
 
@@ -58,4 +56,5 @@ python3 main.py
 <img width="1920" height="1080" alt="Screenshot from 2026-08-31 18-19-55" src="https://github.com/user-attachments/assets/da7b4ef6-121c-4b30-8f9a-b7838ba5632d" />
 
 
+```bash
 
