@@ -39,6 +39,8 @@ Isso comprova a seguinte teoria de complexidade:
 - Busca com relatório de eficiência algorítmica (Benchmark).
 - Remoção inteligente mantendo a integridade da árvore (substituição pelo sucessor/menor nó à direita).
 - Listagem completa da frota em ordem alfabética (Travessia *Em Ordem*).
+- Visualização Gráfica da Árvore: Desenho estrutural da ABB direto no console.
+- Histórico de Movimentação:** Log completo de todas as entradas e saídas de veículos.
 
 ##  Como Rodar
 Certifique-se de possuir o Python 3 instalado no seu ambiente. Acesse a raiz do repositório via terminal e execute:
