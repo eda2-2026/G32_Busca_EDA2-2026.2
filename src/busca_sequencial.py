@@ -1,29 +1,39 @@
-from veiculo import Veiculo
+from typing import Tuple, List
+from src.veiculo import Veiculo
+from src.arvore_binaria import ArvoreBinariaBusca
+from src.busca_sequencial import BuscaSequencial
 
-class BuscaSequencial:
+class Estacionamento:
+    def __init__(self, total_vagas: int):
+        self.total_vagas = total_vagas
+        self.abb = ArvoreBinariaBusca()
+        self.sequencial = BuscaSequencial()
 
-    def __init__(self):
-        self.veiculos = []
+    def vagas_disponiveis(self) -> int:
+        return self.total_vagas - len(self.abb)
 
-    def inserir(self, veiculo: Veiculo):
-        self.veiculos.append(veiculo)
+    def inserir_veiculo(self, placa: str, vaga: int, modelo: str) -> Tuple[bool, str]:
+        if self.vagas_disponiveis() <= 0:
+            return False, "Erro: Estacionamento lotado."
 
-    def buscar(self, placa: str):
-        placa = placa.upper().replace("-", "")
-        comparacoes = 0
-        for v in self.veiculos:
-            comparacoes += 1
-            if v.placa == placa:
-                return v, comparacoes
-        return None, comparacoes
+        veiculo = Veiculo(placa, vaga, modelo)
+        
+        if self.abb.inserir(veiculo):
+            self.sequencial.inserir(veiculo)
+            return True, f"Sucesso: Veículo {veiculo.placa} estacionado na vaga {veiculo.vaga}."
+        else:
+            return False, f"Erro: A placa {veiculo.placa} já está cadastrada."
 
-    def remover(self, placa: str) -> bool:
-        placa = placa.upper().replace("-", "")
-        for i, v in enumerate(self.veiculos):
-            if v.placa == placa:
-                del self.veiculos[i]
-                return True
-        return False
+    def buscar_veiculo(self, placa: str) -> Tuple[Veiculo, int, int]:
+        veiculo_abb, comp_abb = self.abb.buscar(placa)
+        _, comp_seq = self.sequencial.buscar(placa)
+        return veiculo_abb, comp_abb, comp_seq
 
-    def __len__(self):
-        return len(self.veiculos)
+    def remover_veiculo(self, placa: str) -> Tuple[bool, str]:
+        if self.abb.remover(placa):
+            self.sequencial.remover(placa)
+            return True, "Sucesso: Veículo removido e vaga liberada."
+        return False, "Erro: Veículo não encontrado."
+
+    def listar_veiculos(self) -> List[Veiculo]:
+        return self.abb.em_ordem()
