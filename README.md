@@ -51,7 +51,7 @@ python3 main.py
 
 ##  Demonstração do Sistema
 
-!(assets/Screenshot from 2026-08-31 18-19-29.png)
-!(assets/Screenshot from 2026-08-31 18-19-40.png)
-!(assets/Screenshot from 2026-08-31 18-19-49.png)
-!(assets/Screenshot from 2026-08-31 18-19-55.png)
+![Cadastro Inicial](assets/Screenshot%20from%202026-08-31%2018-19-29.png)
+![Demonstração Benchmark](assets/Screenshot%20from%202026-08-31%2018-19-40.png)
+![Árvore Inclinada](assets/Screenshot%20from%202026-08-31%2018-19-49.png)
+![Histórico](assets/Screenshot%20from%202026-08-31%2018-19-55.png)
