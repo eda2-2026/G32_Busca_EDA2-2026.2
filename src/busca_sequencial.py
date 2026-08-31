@@ -1,4 +1,4 @@
-from veiculo import Veiculo
+from src.veiculo import Veiculo
 
 class BuscaSequencial:
 
